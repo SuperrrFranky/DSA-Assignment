@@ -14,7 +14,8 @@ public class DSAAssignment {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+        VolunteerManager volunteerManager = new VolunteerManager();
+        VolunteerUI volunteerUI = new VolunteerUI(volunteerManager);
+        volunteerUI.displayMenu();
+    }    
 }
